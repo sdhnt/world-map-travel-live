@@ -5,7 +5,13 @@
     <title>JQVMap - World Map</title>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 
-    <link href="../dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet'>
+<style>
+body {
+    font-family: 'Oswald';font-size: 22px;
+}
+</style>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script type="text/javascript" src="dist/jquery.vmap.js"></script>
@@ -15,8 +21,8 @@
     <script>
       jQuery(document).ready(function () {
 			  
-const COLOR_LIVE = '#9093B2';
-const COLOR_TRAVEL = '#AE9EB6';
+const COLOR_LIVE = '#000000';
+const COLOR_TRAVEL = '#EC7063';
 // region codes: https://github.com/10bestdesign/jqvmap/blob/master/REGIONS.md
 jQuery('#vmap').vectorMap({
     map: 'world_en',
@@ -74,6 +80,14 @@ jQuery('#vmap').vectorMap({
     </script>
   </head>
   <body>
-    <div id="vmap" style="width: 600px; height: 400px;"></div>
+  
+
+  
+  
+  
+  <center>
+  <p>Here's where I've <b style="color:#000000">lived</b> and <b style="color:#EC7063">traveled</b></p><br>
+    <div id="vmap" style="width: 800px; height: 400px;"></div>
+	</center>
   </body>
 </html>
